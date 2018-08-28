@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <script src="./js/lib/angular.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+                <h1>ng-model</h1>
+                <h4>en Angularjs</h4>
+                <p>Nombre: {{nombre | uppercase}} </p>
+                <input type="text" ng-model="nombre" class="form-control" placeholder="Ingrese su nombre"/>
+                <br/>
+                <p>Pais: {{pais}}</p>
+                <select class="form-control" ng-model="pais">
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Argentina">Argentina</option>
+                </select>
+                <br/>
+                <p>Opciones: {{ opt1 }} {{ opt2 }} </p>
+                <p><input type="checkbox" ng-model="opt1">Opcion 1</p>
+                <p><input type="checkbox" ng-model="opt2">Opcion 2</p>
+
+                <p>Seleccione el genero: {{ genero }}</p>
+                <p>
+                    <input type="radio" value="masculino" ng-model="genero"/>Masculino
+                    <input type="radio" value="femenino" ng-model="genero"/>Femenino
+                </p>                
+        </div>
+    </body>
+</html>
